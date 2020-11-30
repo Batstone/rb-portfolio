@@ -1,0 +1,22 @@
+
+.about {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    width: 100%;
+}
+
+.about-left {
+    width: 80%;
+    .img-container {
+        width: 100%;
+        img {
+            width: 100%;
+        }
+    }
+}
+
+.about-right {
+    width: 80%;
+}
+

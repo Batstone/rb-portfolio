@@ -11,3 +11,18 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 * {
     font-size: 100%;
 }
+
+.wrapper {
+    max-width: 900px;
+    margin: 0 auto;
+    width: 90%;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+section {
+    margin-top: 60px;
+}
