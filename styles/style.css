@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&family=Merriweather&display=swap");
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
   margin: 0;
   padding: 0;
@@ -236,6 +237,22 @@ textarea {
   width: 90%;
 }
 
+body {
+  font-family: 'Merriweather', serif;
+}
+
+h1, h2 {
+  font-family: 'Lora', serif;
+}
+
+h1 {
+  font-size: clamp(4rem, 4vw, 6rem);
+}
+
+h2 {
+  font-size: clamp(3rem, 3.4vw, 5rem);
+}
+
 a {
   text-decoration: none;
 }
@@ -261,9 +278,12 @@ section {
 .about {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr .2fr;
+      grid-template-columns: 1fr 1fr .2fr;
   justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
 }
 
@@ -271,14 +291,49 @@ section {
   width: 80%;
 }
 
-.about-left .img-container {
-  width: 100%;
+.about-left ul {
+  margin-top: 25px;
 }
 
-.about-left .img-container img {
-  width: 100%;
+.about-left .about-left-text {
+  margin-top: 25px;
 }
 
 .about-right {
   width: 80%;
+}
+
+.about-right .img-container {
+  width: 100%;
+}
+
+.about-right .img-container img {
+  width: 100%;
+}
+
+.about-social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-social-list .social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.about-social-list .social-list li {
+  margin-top: 25px;
+}
+
+.about-social-list .social-list i {
+  font-size: 25px;
 }

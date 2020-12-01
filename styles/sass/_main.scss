@@ -1,12 +1,23 @@
 
 .about {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr .2fr;
     justify-items: center;
+    align-items: center;;
     width: 100%;
 }
 
 .about-left {
+    width: 80%;
+    ul {
+        margin-top: 25px;
+    }
+    .about-left-text {
+        margin-top: 25px;
+    }
+}
+
+.about-right {
     width: 80%;
     .img-container {
         width: 100%;
@@ -16,7 +27,17 @@
     }
 }
 
-.about-right {
-    width: 80%;
+.about-social-list {
+    display: flex;
+    align-items: center;
+    .social-list {
+        display: flex;
+        flex-direction: column;
+        li {
+            margin-top: 25px;
+        }
+        i {
+            font-size: 25px;;
+        }
+    }
 }
-
