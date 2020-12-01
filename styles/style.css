@@ -246,11 +246,17 @@ h1, h2 {
 }
 
 h1 {
-  font-size: clamp(4rem, 4vw, 6rem);
+  font-size: clamp(2rem, 4vw, 6rem);
+  font-weight: bold;
 }
 
 h2 {
-  font-size: clamp(3rem, 3.4vw, 5rem);
+  font-size: clamp(2rem, 3.4vw, 5rem);
+}
+
+p {
+  font-size: clamp(0.9rem, 1.2vw, 1.3rem);
+  line-height: 1.5;
 }
 
 a {
@@ -275,20 +281,25 @@ section {
   margin: 20px;
 }
 
+.main-nav ul a {
+  color: black;
+}
+
 .about {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr .2fr;
-      grid-template-columns: 1fr 1fr .2fr;
-  justify-items: center;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
+  grid-gap: 10px;
 }
 
 .about-left {
-  width: 80%;
+  -ms-grid-column-align: start;
+      justify-self: start;
 }
 
 .about-left ul {
@@ -299,28 +310,11 @@ section {
   margin-top: 25px;
 }
 
+.about-left .about-left-text p {
+  margin-top: 20px;
+}
+
 .about-right {
-  width: 80%;
-}
-
-.about-right .img-container {
-  width: 100%;
-}
-
-.about-right .img-container img {
-  width: 100%;
-}
-
-.about-social-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.about-social-list .social-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -328,12 +322,70 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-right .img-container {
+  width: 80%;
+}
+
+.about-right .img-container img {
+  width: 100%;
+}
+
+.about-social-list {
+  width: 100%;
+}
+
+.about-social-list .social-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .about-social-list .social-list li {
-  margin-top: 25px;
+  margin: 20px;
 }
 
 .about-social-list .social-list i {
   font-size: 25px;
+}
+
+.more-info p {
+  margin-top: 40px;
+}
+
+.more-info .more-info-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-nav {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25px 0;
+  margin-top: 100px;
+}
+
+.footer-nav a {
+  color: white;
+  padding: 10px;
 }
