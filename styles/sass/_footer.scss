@@ -1,13 +1,15 @@
 
 
-.footer-nav {
+.footer {
     background-color: black;
-    display: flex;
-    justify-content: center;
-    padding: 25px 0;
-    margin-top: 100px;
-    a {
-        color: white;
-        padding: 10px;
+    &__nav-list {
+        display: flex;
+        justify-content: center;
+        padding: 25px 0;
+        margin-top: 100px;
+        a {
+            margin: 0 25px;
+            color: white;
+        }
     }
 }

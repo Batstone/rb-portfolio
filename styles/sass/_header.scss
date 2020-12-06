@@ -1,15 +1,25 @@
 
-.main-nav {
-    ul {
+header {
+    background-image: url(../../assets/tattoo_transparent.png);
+    background-repeat: no-repeat;
+    background-size: 200px;
+    background-position: 7% 99%;
+    height: 22vh;
+}
+
+.nav {
+    .nav__list {
         list-style-type: none;
         display: flex;
         justify-content: center;
-        li {
+        .nav__list-item {
             margin: 20px;
-        }
-        a {
-            color: black;
+            font-size: clamp(1.2rem, 1.2vw, 1.5rem);
+            a {
+                letter-spacing: 2px;
+            }
         }
     }
 }
+
 
