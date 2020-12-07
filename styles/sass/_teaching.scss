@@ -1,0 +1,44 @@
+
+.teaching-1 {
+    &__container-2 {
+        display: flex;
+        justify-content: space-between;
+        &__img-1 {
+            width: 45%;
+            img {
+                width: 100%;
+            }
+        }
+        &__text-1 {
+            width: 50%;
+        }
+    }
+}
+
+.microbia {
+    display: flex;
+    justify-content: space-between;
+    &__container-1 {
+        width: 45%;
+    }
+    &__container-2 {
+        width: 45%;
+    }
+}
+
+.comic {
+    &__container {
+        &__img-1 {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        &__img-2 {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+}

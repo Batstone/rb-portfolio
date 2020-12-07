@@ -1,36 +1,55 @@
-@mixin grid($columns: 1fr, $display: grid, $gap: 5%) {
+@mixin grid($columns: 1fr, $display: grid, $gap: 50px) {
     display: $display;
     grid-template-columns: $columns;
-    gap: $gap
+    grid-gap: $gap
+}
+
+@mixin dark-img($color: black, $padding: 10px)
+{
+    background-color: $color;
+    padding: $padding;
 }
 
 h2 {
     font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
+
 h3 {
     font-size: 30px;
+    margin-bottom: 30px;
 }
 p {
     font-size: 16px;
+}
+
+.post {
+    margin: 100px 0;
+}
+
+.img-container {
+    margin: 30px 0;
 }
 
 .sub-text {
     font-size: 12px;
     text-transform: uppercase;
     text-align: center;
+    line-height: 1.5;
+    margin: 15px 0;
 }
 
 .post-title-center {
-    text-align: center
+    text-align: center;
+    margin: 15px auto 40px;
 }
 
 .title {
     text-align: center;
 }
 
-.post {
-    padding: 100px 0;
-}
+
 
 .post-1 {
     @include grid();
@@ -39,7 +58,6 @@ p {
         text-align: center;
     }
     &__container-1 {
-        grid-column: span 2;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -64,7 +82,6 @@ p {
         }
     }
     &__container-2 {
-        grid-column: span 2;
         p:last-child {
             margin-top: 25px;
         }
@@ -76,16 +93,17 @@ p {
     @include grid(1fr 1fr);
     &__container-1 {
         &__img-1 {
-            margin: 0 auto;
             width: 100%;
             img {
+                @include dark-img();
                 width: 100%;
             }
         }
     }
     &__container-2 {
         &__img-1 {
-            width: 100%;
+            margin: 0 auto 50px;
+            width: 85%;
             img {
                 width: 100%;
             }
@@ -93,6 +111,7 @@ p {
         &__img-2 {
             width: 100%;
             img {
+                @include dark-img();
                 width: 100%;
             }
         }
@@ -101,11 +120,21 @@ p {
 
 .post-3 {
     @include grid(1fr 1fr);
-    h2 {
-        grid-column: span 2;
-    }
     &__container-2 {
         text-align: center;
+        &__img-1 {
+            margin: 0 auto;
+            width: 80%;
+            img {
+                width: 100%;
+            }
+        }
+        &__img-2 {
+            width: 100%;
+            img {
+                width: 20%;
+            }
+        }
     }
 }
 
@@ -116,6 +145,7 @@ p {
         &__img-1 {
             width: 100%;
             img {
+                @include dark-img();
                 width: 60%;
             }
         }
@@ -152,8 +182,9 @@ p {
             }
         }
         &__img-2 {
-            width: 45%;
+            width: 48%;
             img {
+                @include dark-img();
                 width: 100%;
             }
         }
@@ -171,6 +202,16 @@ p {
         &__img-1 {
             width: 100%;
             img {
+                @include dark-img();
+                width: 100%;
+            }
+        }
+    }
+    &__container-2 {
+        &__img-1 {
+            width: 100%;
+            img {
+                @include dark-img();
                 width: 100%;
             }
         }
