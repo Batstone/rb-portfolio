@@ -1,4 +1,22 @@
 
+section {
+    margin: 100px 0;
+}
+
+.sub-text {
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1.5;
+    margin: 15px 0;
+}
+
+.post-title-center {
+    text-align: center;
+    margin: 15px auto 40px;
+}
+
+
 .teaching-1 {
     &__container-2 {
         display: flex;
@@ -20,6 +38,18 @@
     justify-content: space-between;
     &__container-1 {
         width: 45%;
+        &__img-1 {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
+        &__img-2 {
+            width: 100%;
+            img {
+                width: 100%;
+            }
+        }
     }
     &__container-2 {
         width: 45%;

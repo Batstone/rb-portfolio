@@ -697,6 +697,23 @@ p {
   width: 100%;
 }
 
+section {
+  margin: 100px 0;
+}
+
+.sub-text {
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 1.5;
+  margin: 15px 0;
+}
+
+.post-title-center {
+  text-align: center;
+  margin: 15px auto 40px;
+}
+
 .teaching-1__container-2 {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -729,6 +746,22 @@ p {
 
 .microbia__container-1 {
   width: 45%;
+}
+
+.microbia__container-1__img-1 {
+  width: 100%;
+}
+
+.microbia__container-1__img-1 img {
+  width: 100%;
+}
+
+.microbia__container-1__img-2 {
+  width: 100%;
+}
+
+.microbia__container-1__img-2 img {
+  width: 100%;
 }
 
 .microbia__container-2 {
@@ -865,6 +898,75 @@ p {
   .post-6 h3 {
     text-align: center;
   }
+  /* TEACHING */
+  .teaching {
+    width: 80%;
+    margin: 100px auto;
+  }
+  .news {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .news__container-1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .news__container-1__img-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    width: 100%;
+  }
+  .news__container-1__img-1 img {
+    width: 100%;
+  }
+  .news__container-1__text-1 {
+    -webkit-box-ordinal-group: 1;
+        -ms-flex-order: 0;
+            order: 0;
+    width: 100%;
+  }
+  .microbia {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 80%;
+    margin: 100px auto;
+  }
+  .microbia__container-1 {
+    width: 100%;
+  }
+  .microbia__container-1__img-1 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .microbia__container-1__img-2 {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+  .microbia__container-2 {
+    width: 100%;
+  }
 }
 
 /* Landscape phones and down */
@@ -879,6 +981,16 @@ p {
   .post-4,
   .post-5,
   .post-6 {
+    width: 100%;
+  }
+  /* TEACHING */
+  .teaching {
+    width: 100%;
+  }
+  .news {
+    width: 100%;
+  }
+  .microbia {
     width: 100%;
   }
 }
