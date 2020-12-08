@@ -1,18 +1,17 @@
 
 .about {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    @include grid(1fr 1fr);
     align-items: center;
     justify-items: center;
-    width: 100%;
-    grid-gap: 10px;
     h1 {
-        line-height: 3rem;
         box-shadow: inset 0 -0.6em 0 rgba(114, 0, 124, 0.4);
         display: inline;
     }
+    ul {
+        margin-top: 30px;
+    }
     &__text-sub {
-        margin-top: 10px;
+        margin-top: 12px;
     }
     &__text-container {
         border-top: 2px solid rgb(51, 184, 10);

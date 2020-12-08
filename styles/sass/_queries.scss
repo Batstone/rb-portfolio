@@ -18,6 +18,21 @@
         width: 80%;
     }
 
+    /* MAIN */
+
+    .about {
+        @include grid(1fr);
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .info {
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+
+
     /* RESEACRCH */
 
     .post-1 {
@@ -170,6 +185,19 @@
 /* Landscape phones and down */
 @media (max-width: 480px) {
 
+    /* MAIN */
+
+    .about {
+        width: 100%;
+        &__img-container {
+            margin-top: 25px;
+        }
+    }
+
+    .info {
+        width: 100%;
+    }
+    
     /* RESEARCH */
 
     .post-title-center {

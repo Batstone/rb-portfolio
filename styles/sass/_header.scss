@@ -11,7 +11,7 @@ header {
     .nav__list {
         list-style-type: none;
         display: flex;
-        justify-content: center;
+        justify-content: flex-end;
         .nav__list-item {
             margin: 20px;
             font-size: clamp(1.2rem, 1.2vw, 1.5rem);

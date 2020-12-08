@@ -246,8 +246,9 @@ h1, h2 {
 }
 
 h1 {
-  font-size: clamp(2rem, 3.4vw, 5rem);
+  font-size: 55px;
   font-weight: bold;
+  line-height: 1.1;
 }
 
 h2 {
@@ -272,6 +273,10 @@ p i {
 
 a {
   text-decoration: none;
+}
+
+section {
+  margin: 40px 0;
 }
 
 nav a {
@@ -308,9 +313,9 @@ header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .nav .nav__list .nav__list-item {
@@ -347,23 +352,25 @@ header {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   justify-items: center;
-  width: 100%;
-  grid-gap: 10px;
 }
 
 .about h1 {
-  line-height: 3rem;
   -webkit-box-shadow: inset 0 -0.6em 0 rgba(114, 0, 124, 0.4);
           box-shadow: inset 0 -0.6em 0 rgba(114, 0, 124, 0.4);
   display: inline;
 }
 
+.about ul {
+  margin-top: 30px;
+}
+
 .about__text-sub {
-  margin-top: 10px;
+  margin-top: 12px;
 }
 
 .about__text-container {
@@ -437,10 +444,6 @@ h3 {
 
 p {
   font-size: 16px;
-}
-
-.post {
-  margin: 100px 0;
 }
 
 .img-container {
@@ -697,10 +700,6 @@ p {
   width: 100%;
 }
 
-section {
-  margin: 100px 0;
-}
-
 .sub-text {
   font-size: 12px;
   text-transform: uppercase;
@@ -784,6 +783,84 @@ section {
   width: 100%;
 }
 
+.talks-1__container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.talks-1__container-1__text-1 {
+  width: 50%;
+}
+
+.talks-1__container-1__img-1 {
+  width: 45%;
+}
+
+.talks-1__container-1__img-1 img {
+  width: 100%;
+}
+
+.talks-2__container-1__text-1 {
+  margin-bottom: 30px;
+}
+
+.talks-2__container-1__img-1 {
+  width: 60%;
+  margin: 0 auto;
+}
+
+.talks-2__container-1__img-1 img {
+  width: 100%;
+}
+
+.talks-3__container-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.talks-3__container-1__vid-1 {
+  width: 45%;
+}
+
+.talks-3__container-1__vid-1 iframe {
+  width: 100%;
+}
+
+.talks-3__container-1__text-1 {
+  width: 50%;
+}
+
+.talks-3__container-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.talks-3__container-2__vid-1 {
+  width: 45%;
+}
+
+.talks-3__container-2__vid-1 iframe {
+  width: 100%;
+}
+
+.talks-3__container-2__text-1 {
+  width: 50%;
+}
+
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
@@ -795,6 +872,20 @@ section {
   }
   .post-title-center {
     width: 80%;
+  }
+  /* MAIN */
+  .about {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 50px;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .info {
+    width: 80%;
+    margin: 0 auto;
   }
   /* RESEACRCH */
   .post-1 {
@@ -971,6 +1062,16 @@ section {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  /* MAIN */
+  .about {
+    width: 100%;
+  }
+  .about__img-container {
+    margin-top: 25px;
+  }
+  .info {
+    width: 100%;
+  }
   /* RESEARCH */
   .post-title-center {
     width: 100%;

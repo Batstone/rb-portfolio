@@ -1,14 +1,3 @@
-@mixin grid($columns: 1fr, $display: grid, $gap: 50px) {
-    display: $display;
-    grid-template-columns: $columns;
-    grid-gap: $gap
-}
-
-@mixin dark-img($color: black, $padding: 10px)
-{
-    background-color: $color;
-    padding: $padding;
-}
 
 h2 {
     font-size: 40px;
@@ -24,9 +13,6 @@ p {
     font-size: 16px;
 }
 
-.post {
-    margin: 100px 0;
-}
 
 .img-container {
     margin: 30px 0;
