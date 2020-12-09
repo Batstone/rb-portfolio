@@ -17,8 +17,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
     font-size: 100%;
 }
 
+html {
+    background-color: rgb(235, 235, 235);
+}
+
 .wrapper {
-    max-width: 900px;
+    max-width: 1080px;
     margin: 0 auto;
     width: 90%;
 }
@@ -61,29 +65,60 @@ a {
     text-decoration: none;
 }
 
-section {
-    margin: 40px 0;
-}
-
 
 nav {
-    a {
+    li {
         position: relative;
-        color:  rgb(114, 0, 124);
-        &:after {
-            content: '';
-            display: block;
-            border-bottom: 3px solid rgb(51, 184, 10);
-            width: 0;
+    }
+    a {
+        z-index: 0;
+        letter-spacing: 2px;
+        font-size: 22px;
+        color: black;
+        &:before {
             position: absolute;
-            right: 0;
-            -webkit-transition: .5s ease;
-            transition: .5s ease;
-            margin-top: 5px;
+            content: '';
+            height: 10px;
+            width: 15px;
+            top: -40%;
+            left: -6%;
+            transition: box-shadow .4s ease;
         }
-        &:hover:after {
-            width: 100%; 
+        &:hover::before,
+        &:focus::before {
+            box-shadow: -3px -3px black;
         }
+        &:after {
+            position: absolute;
+            content: '';
+            height: 10px;
+            width: 15px;
+            bottom: -40%;
+            right: -6%;
+            transition: box-shadow .4s ease;
+        }
+        &:hover::after,
+        &:focus::after {
+                box-shadow: 3px 3px black;
+        }
+    }
+}
+
+header {
+    position: relative;
+    background-color: rgb(235, 235, 235);
+    &::before {
+        z-index:14;
+        position: absolute;
+        content: '';
+        background-image: url(../../assets/roots-removebg-preview.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 275px;
+        width: 275px;
+        left: 65%;
+        top: -100%;
+        transform: rotate(30deg);
     }
 }
   
@@ -99,3 +134,20 @@ nav {
     padding: $padding;
 }
 
+.dark {
+    background-color: black;
+    color: white;
+    max-width: 1080px;
+    margin: 0 auto;
+    width: 90%;
+    padding: 100px 40px;
+}
+
+.light {
+    background-color: white;
+    color: black;
+    max-width: 1080px;
+    margin: 0 auto;
+    width: 90%;
+    padding: 100px 40px;
+}

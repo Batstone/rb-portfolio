@@ -28,21 +28,17 @@ p {
 
 .post-title-center {
     text-align: center;
-    margin: 15px auto 40px;
+    margin: 20px auto 40px;
 }
 
 .title {
+    width: 50%;
+    margin: 0 auto 50px;
     text-align: center;
 }
 
-
-
 .post-1 {
     @include grid();
-    h2 {
-        grid-column-start: span 2;
-        text-align: center;
-    }
     &__container-1 {
         display: flex;
         justify-content: space-between;
@@ -54,7 +50,7 @@ p {
             position: absolute;
             font-size: 180px;
             color: rgba(185, 24, 24, 0.171);
-            top: 10%;
+            top: 15%;
             left: -3%;
         }
         &__text-1 {

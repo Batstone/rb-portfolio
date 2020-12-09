@@ -1,10 +1,10 @@
 
 .about {
+    color: white;
     @include grid(1fr 1fr);
     align-items: center;
     justify-items: center;
     h1 {
-        box-shadow: inset 0 -0.6em 0 rgba(114, 0, 124, 0.4);
         display: inline;
     }
     ul {
@@ -14,7 +14,7 @@
         margin-top: 12px;
     }
     &__text-container {
-        border-top: 2px solid rgb(51, 184, 10);
+        border-top: 2px solid rgb(255, 255, 255);
         margin-top: 25px;
         p {
             margin-top: 20px
@@ -26,6 +26,7 @@
         align-items: center;
     }
     &__img-container {
+        z-index: 2;
         width: 100%;
         img {
             width: 100%;
@@ -51,7 +52,6 @@
         h2 {
             width: 80%;
             display: inline;
-            box-shadow: inset 0 -0.6em 0 rgba(219, 184, 29, 0.4);
         }
     }
 }

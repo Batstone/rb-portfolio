@@ -22,22 +22,14 @@
 
     .about {
         @include grid(1fr);
-        width: 80%;
-        margin: 0 auto;
     }
 
-    .info {
-        width: 80%;
-        margin: 0 auto;
-    }
     
 
 
     /* RESEACRCH */
 
     .post-1 {
-        width: 80%;
-        margin: 0 auto;
         &__container-1 {
             flex-direction: column;
             z-index: 1;
@@ -56,8 +48,6 @@
 
     .post-2 {
         @include grid(1fr);
-        width: 80%;
-        margin: 0 auto;
         &__container-1 {
             &__img-1 {
                 margin: 25px auto;
@@ -73,8 +63,6 @@
     
     .post-3 {
         @include grid(1fr);
-        width: 80%;
-        margin: 0 auto;
         &__container-2 {
             &__img-2 {
                 img {
@@ -85,8 +73,6 @@
     }
         
     .post-4 {
-        width: 80%;
-        margin: 0 auto;
         h2 {
             text-align: center;
         }
@@ -109,8 +95,6 @@
     }
 
     .post-5 {
-        width: 80%;
-        margin: 0 auto;
         &__container-1 {
             flex-direction: column;
             align-items: center;
@@ -125,8 +109,6 @@
 
     .post-6 {
         @include grid(1fr);
-        width: 80%;
-        margin: 0 auto;
         h3 {
             text-align: center;
         }
@@ -140,8 +122,6 @@
     }
 
     .news {
-        width: 80%;
-        margin: 0 auto;
         &__container-1 {
             justify-content: center;
             align-items: center;
