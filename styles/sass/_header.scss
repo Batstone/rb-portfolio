@@ -1,21 +1,37 @@
 
 header {
-    position: relative;
     margin: 15px 0 100px 0;
 }
 
-.nav {
-    .nav__list {
-        list-style-type: none;
-        display: flex;
-        .nav__list-item {
-            font-size: 20px;
-            margin-top: 25px;
-        }
-        .nav-link {
-            margin-left: 5%;
+.header {
+    &__mobile-icon-container {
+        background: rgba(255, 255, 255, 0);
+        border: none;
+        display:none;
+        margin-top: 35px;
+    }
+    &__mobile-icon {
+        font-size: 30px;
+    }
+    &__mobile-icon--active {
+        font-size: 30px;
+        color: #208307;
+    }
+    &__nav {
+        &__list {
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+            &__item {
+                font-size: 20px;
+                margin-top: 25px;
+            }
+            &__link {
+                margin-left: 5%;
+            }
         }
     }
+    
 }
 
 

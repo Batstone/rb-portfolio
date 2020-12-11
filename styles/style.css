@@ -286,8 +286,8 @@ nav li {
 nav a {
   z-index: 0;
   letter-spacing: 2px;
-  font-size: 22px;
-  color: black;
+  font-size: 20px;
+  color: #4a804a;
 }
 
 nav a:before {
@@ -326,33 +326,13 @@ nav a:hover::after, nav a:focus::after {
           box-shadow: 3px 3px black;
 }
 
-header {
-  position: relative;
-  background-color: #ebebeb;
-}
-
-header::before {
-  z-index: 14;
-  position: absolute;
-  content: '';
-  background-image: url(../../assets/roots-removebg-preview.png);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 275px;
-  width: 275px;
-  left: 65%;
-  top: -100%;
-  -webkit-transform: rotate(30deg);
-          transform: rotate(30deg);
-}
-
 .dark {
   background-color: black;
   color: white;
   max-width: 1080px;
   margin: 0 auto;
   width: 90%;
-  padding: 100px 40px;
+  padding: 100px 20px;
 }
 
 .light {
@@ -361,27 +341,45 @@ header::before {
   max-width: 1080px;
   margin: 0 auto;
   width: 90%;
-  padding: 100px 40px;
+  padding: 100px 20px;
 }
 
 header {
-  position: relative;
   margin: 15px 0 100px 0;
 }
 
-.nav .nav__list {
+.header__mobile-icon-container {
+  background: rgba(255, 255, 255, 0);
+  border: none;
+  display: none;
+  margin-top: 35px;
+}
+
+.header__mobile-icon {
+  font-size: 30px;
+}
+
+.header__mobile-icon--active {
+  font-size: 30px;
+  color: #208307;
+}
+
+.header__nav__list {
   list-style-type: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
-.nav .nav__list .nav__list-item {
+.header__nav__list__item {
   font-size: 20px;
   margin-top: 25px;
 }
 
-.nav .nav__list .nav-link {
+.header__nav__list__link {
   margin-left: 5%;
 }
 
@@ -914,6 +912,10 @@ p {
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  .dark,
+  .light {
+    width: 100%;
+  }
   h2 {
     font-size: 35px;
   }
@@ -922,6 +924,25 @@ p {
   }
   .post-title-center {
     width: 80%;
+  }
+  /* HEADER */
+  header {
+    margin: 15px 0 35px 0;
+  }
+  .header__mobile-icon-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__nav__list {
+    display: none;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .header__nav__list__link {
+    margin-left: 0;
   }
   /* MAIN */
   .about {
@@ -1084,6 +1105,10 @@ p {
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  .dark,
+  .light {
+    padding: 100px 10px;
+  }
   /* MAIN */
   .about {
     width: 100%;

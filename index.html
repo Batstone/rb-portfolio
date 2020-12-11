@@ -13,14 +13,23 @@
     <header>
         <div class="wrapper">
             <!--MAIN NAVIGATION-->
-            <nav class="nav">
-                <ul class="nav__list">
-                    <li class="nav__list-item"><a href="./index.html">Home</a></li>
-                    <li class="nav__list-item nav-link"><a href="./research.html">Research</a></li>
-                    <li class="nav__list-item nav-link"><a href="./teaching.html">Teaching/Outreach</a></li>
-                    <li class="nav__list-item nav-link"><a href="./talks.html">Talks</a></li>
-                </ul>
-            </nav>
+            <div class="header">
+                <button class="header__mobile-icon-container"><i class="fas fa-bars js-menu header__mobile-icon"
+                        title="Hamburger Menu"></i></button>
+                <span class="sr-only">Hamburger icon to trigger mobile navigation</span>
+                <nav class="header__nav">
+                    <ul class="header__nav__list">
+                        <li class="header__nav__list__item"><a href="./index.html">Home</a></li>
+                        <li class="header__nav__list__item header__nav__list__link"><a
+                                href="./research.html">Research</a>
+                        </li>
+                        <li class="header__nav__list__item header__nav__list__link"><a
+                                href="./teaching.html">Teaching/Outreach</a></li>
+                        <li class="header__nav__list__item header__nav__list__link"><a href="./talks.html">Talks</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
 
@@ -135,7 +144,7 @@
     <script src="https://kit.fontawesome.com/ae5be4dc98.js" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
-    <script src="./scripts/app.js"></script>
+    <script src="./scripts/script.js"></script>
 </body>
 
 </html>

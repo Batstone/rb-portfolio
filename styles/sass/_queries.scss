@@ -6,6 +6,11 @@
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
+    .dark,
+    .light {
+        width: 100%;
+    }
+
     h2 {
         font-size: 35px;
     }
@@ -18,14 +23,32 @@
         width: 80%;
     }
 
+    /* HEADER */
+
+    header {
+        margin: 15px 0 35px 0;
+    }
+
+    .header {
+        &__mobile-icon-container {
+            display: flex;
+        }
+        &__nav {
+            &__list {
+                display: none;
+                flex-direction: column;
+                &__link {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+
     /* MAIN */
 
     .about {
         @include grid(1fr);
     }
-
-    
-
 
     /* RESEACRCH */
 
@@ -164,6 +187,11 @@
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+
+    .dark,
+    .light {
+        padding: 100px 10px;
+    }
 
     /* MAIN */
 
