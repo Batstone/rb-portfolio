@@ -352,7 +352,6 @@ header {
   background: rgba(255, 255, 255, 0);
   border: none;
   display: none;
-  margin-top: 35px;
 }
 
 .header__mobile-icon {
@@ -381,6 +380,18 @@ header {
 
 .header__nav__list__link {
   margin-left: 5%;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 5px 20px;
+  background-color: rgba(255, 255, 255, 0.8);
+  -webkit-box-shadow: 0 2px 2px #efefef;
+          box-shadow: 0 2px 2px #efefef;
+  z-index: 9999;
 }
 
 .footer {
