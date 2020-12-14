@@ -1,6 +1,6 @@
 
 header {
-    margin: 15px 0 100px 0;
+    margin: 0 0 50px 0;
 }
 
 .header {
@@ -10,20 +10,24 @@ header {
         display:none;
     }
     &__mobile-icon {
+        margin: 5px 15px;
         font-size: 30px;
     }
     &__mobile-icon--active {
+        margin: 5px 15px;
         font-size: 30px;
         color: #208307;
     }
     &__nav {
         &__list {
+            display: flex;
+            justify-content: flex-end;
+            padding: 30px 20px;
             list-style-type: none;
             display: flex;
             justify-content: flex-end;
             &__item {
                 font-size: 20px;
-                margin-top: 25px;
             }
             &__link {
                 margin-left: 5%;
@@ -38,7 +42,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    padding: 5px 20px;
+   
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 2px 2px #efefef;
     z-index: 9999;

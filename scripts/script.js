@@ -20,7 +20,6 @@ $(function () {
             $('.header')
                 .removeClass('sticky')
         }
-
     }, {
         offset: '40px;'
     });
