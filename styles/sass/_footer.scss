@@ -2,13 +2,28 @@
 
 .footer {
     margin-top: 100px;
+    background-color: black;
+    &__container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
     &__nav-list {
         display: flex;
-        justify-content: center;
         padding: 25px 0;
         a {
             margin: 0 25px;
-           
+        }
+    }
+    &__social-list {
+        display: flex;
+        justify-content: center;
+        li {
+            margin: 20px;
+        }
+        i {
+            font-size: 30px;
+            color: white;
         }
     }
 }

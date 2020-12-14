@@ -4,9 +4,6 @@
     @include grid(1fr 1fr);
     align-items: center;
     justify-items: center;
-    h1 {
-        display: inline;
-    }
     ul {
         margin-top: 30px;
     }
@@ -17,7 +14,14 @@
         border-top: 2px solid rgb(255, 255, 255);
         margin-top: 25px;
         p {
-            margin-top: 20px
+            margin-top: 20px;
+            span {
+                font-weight: bold;
+            }
+            i {
+                color: #208307;
+                cursor: auto;
+            }
         }
     }
     &__img-social {

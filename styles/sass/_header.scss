@@ -1,9 +1,27 @@
 
-header {
-    margin: 0 0 50px 0;
+.element {
+    position: relative;
+    z-index: 1;
+    &::before {
+        z-index: 0;
+        content: '';
+        position: absolute;
+        height: 400px;
+        width: 600px;
+        background-image: url(../../assets/roots-removebg-preview.png);
+        background-repeat: no-repeat;
+        -webkit-filter: invert(1);
+        filter: invert(1);
+        top: -70px;
+        right: -300px;
+        transform: rotate(40deg);
+    }
 }
 
+
 .header {
+    background-color: black;
+    padding-bottom: 15px;
     &__mobile-icon-container {
         background: rgba(255, 255, 255, 0);
         border: none;
@@ -19,22 +37,22 @@ header {
         color: #208307;
     }
     &__nav {
+        z-index: 2;
         &__list {
             display: flex;
-            justify-content: flex-end;
+            width: 80%;
+            margin-left: 5%;
             padding: 30px 20px;
             list-style-type: none;
             display: flex;
-            justify-content: flex-end;
             &__item {
-                font-size: 20px;
+                font-weight: bold;
             }
             &__link {
                 margin-left: 5%;
             }
         }
     }
-    
 }
 
 .sticky {
@@ -42,10 +60,18 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-   
     background-color: rgba(255, 255, 255, 0.8);
     box-shadow: 0 2px 2px #efefef;
     z-index: 9999;
+    i {
+        color: black;
+    }
+    a {
+        &:hover,
+        &:focus {
+            border-bottom: 2px solid black;
+        }
+    }
 }
 
 

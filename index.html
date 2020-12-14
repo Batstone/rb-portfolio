@@ -13,12 +13,12 @@
     <header>
         <div class="wrapper">
             <!--MAIN NAVIGATION-->
-            <div class="header">
+            <div class="header element">
                 <button class="header__mobile-icon-container"><i class="fas fa-bars js-menu header__mobile-icon"
                         title="Hamburger Menu"></i></button>
                 <span class="sr-only">Hamburger icon to trigger mobile navigation</span>
                 <nav class="header__nav">
-                    <ul class="header__nav__list">
+                    <ul class="header__nav__list" id="js-nav">
                         <li class="header__nav__list__item"><a href="./index.html">Home</a></li>
                         <li class="header__nav__list__item header__nav__list__link"><a
                                 href="./research.html">Research</a>
@@ -34,7 +34,7 @@
     </header>
 
     <main>
-        <section class="dark js--main-intro">
+        <section class="dark">
             <div class="wrapper">
                 <!--ABOUT SETION-->
                 <div class="about">
@@ -59,7 +59,8 @@
 
                             <p>
                                 <i class="fas fa-seedling"></i>
-                                News/updates: our paper in Science was just published, so excited to see this work out!
+                                <span>News/updates:</span> our paper in Science was just published, so excited to see
+                                this work out!
                                 If
                                 you
                                 want
@@ -72,15 +73,19 @@
                             </p>
                         </div>
                     </div>
-                    <div class="about__img-social">
+                    <div class="about__img-social js--main-nav">
                         <div class="about__img-container">
                             <img src="./assets/dsc01579.jpg" alt="Headshot of the scientist, Dr. Rebecca Batstone">
                         </div>
                         <div class="about__social-container">
                             <ul class="about__social-list">
-                                <li><a><i class="fab fa-twitter"></i></a></li>
-                                <li><a><i class="fab fa-instagram"></i></a></li>
-                                <li><a><i class="fas fa-envelope-square"></i></a></li>
+                                <li><a href="https://twitter.com/BatstoneRebecca" target="_blank"><i
+                                            class="fab fa-twitter"></i></a></li>
+                                <li><a href="https://www.instagram.com/rebeccabatstone/" target="_blank"><i
+                                            class="fab fa-instagram"></i></a>
+                                </li>
+                                <li><a href="mailto:rtbatstone@gmail.com"><i class="fas fa-envelope-square"></i></a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -131,19 +136,31 @@
 
     <!--FOOTER-->
     <footer class="footer">
-        <nav class="wrapper">
-            <ul class="footer__nav-list">
-                <li class="footer__nav-link"><a href="./index.html">Home</a></li>
-                <li class="footer__nav-link"><a href="./research.html">Research</a></li>
-                <li class="footer__nav-link"><a href="./teaching.html">Teaching/Outreach</a></li>
-                <li class="footer__nav-link"><a href="./talks.html">Talks</a></li>
-            </ul>
-        </nav>
+        <div class="wrapper">
+            <div class="footer__container">
+                <div class="about__social-container">
+                    <ul class="footer__social-list">
+                        <li><a href="https://twitter.com/BatstoneRebecca" target="_blank"><i
+                                    class="fab fa-twitter"></i></a></li>
+                        <li><a href="https://www.instagram.com/rebeccabatstone/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                        </li>
+                        <li><a href="mailto:rtbatstone@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
+                    </ul>
+                </div>
+                <nav class="footer-nav">
+                    <ul class="footer__nav-list">
+                        <li class="footer__nav-link"><a href="./index.html">Home</a></li>
+                        <li class="footer__nav-link"><a href="./research.html">Research</a></li>
+                        <li class="footer__nav-link"><a href="./teaching.html">Teaching/Outreach</a></li>
+                        <li class="footer__nav-link"><a href="./talks.html">Talks</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </footer>
 
-
     <script src="https://kit.fontawesome.com/ae5be4dc98.js" crossorigin="anonymous"></script>
-
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"
         integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
     <script src="./scripts/jquery.waypoints.min.js"></script>

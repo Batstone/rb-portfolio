@@ -26,17 +26,30 @@
     /* HEADER */
 
     header {
-        margin: 15px 0 35px 0;
+        background-color: black;
+    }
+
+    .element {
+        &::before {
+            top: -120px;
+            right: -300px;
+            transform: rotate(35deg);
+        }
     }
 
     .header {
+        padding: 20px 0;
         &__mobile-icon-container {
             display: flex;
         }
         &__nav {
+            position: relative;
             &__list {
                 display: none;
                 flex-direction: column;
+                position: absolute;
+                top: -65px;
+                left: 20px;
                 &__link {
                     margin-left: 0;
                     margin-top: 15px;
@@ -49,6 +62,9 @@
 
     .about {
         @include grid(1fr);
+        h1 {
+            width: 70%;
+        }
     }
 
     /* RESEACRCH */
@@ -186,6 +202,35 @@
     }
 }
 
+@media (max-width: 640px) {
+
+    /* FOOTER */
+
+    .footer {
+        &__nav-list {
+            a {
+                margin: 0 10px;
+            }
+        }
+    }
+}
+
+@media (max-width: 580px) {
+
+    /* FOOTER */
+
+    .footer {
+        margin-top: 25px;
+        &__nav-list {
+            align-items: center;
+            flex-direction: column;
+        }
+        &__nav-link  {
+            margin: 10px 0;
+        }
+    }
+}
+
 /* Landscape phones and down */
 @media (max-width: 480px) {
 
@@ -194,10 +239,23 @@
         padding: 100px 10px;
     }
 
+    /* HEADER */
+    
+    .element {
+        &::before {
+            top: -250px;
+            right: -400px;
+            transform: rotate(35deg);
+        }
+    }
+
     /* MAIN */
 
     .about {
         width: 100%;
+        h1 {
+            width: 100;
+        }
         &__img-container {
             margin-top: 25px;
         }

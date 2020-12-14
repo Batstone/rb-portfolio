@@ -36,7 +36,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 55px;
+    font-size: 50px;
     font-weight: bold;
     line-height: 1.1;
 }
@@ -71,36 +71,27 @@ nav {
         position: relative;
     }
     a {
-        z-index: 0;
         letter-spacing: 2px;
-        font-size: 20px;
+        font-size: 21px;
         color: rgb(74, 128, 74);
-        &:before {
-            position: absolute;
-            content: '';
-            height: 10px;
-            width: 15px;
-            top: -40%;
-            left: -6%;
-            transition: box-shadow .4s ease;
+        border-bottom: 2px solid transparent;
+        transition: .5s;
+        padding: 5px;
+        &:hover,
+        &:focus {
+            border-bottom: 2px solid white;
         }
-        &:hover::before,
-        &:focus::before {
-            box-shadow: -3px -3px black;
-        }
-        &:after {
-            position: absolute;
-            content: '';
-            height: 10px;
-            width: 15px;
-            bottom: -40%;
-            right: -6%;
-            transition: box-shadow .4s ease;
-        }
-        &:hover::after,
-        &:focus::after {
-                box-shadow: 3px 3px black;
-        }
+    }
+}
+
+i {
+    cursor: pointer;
+    transition: .2s;
+    color: white;
+    &:hover,
+    &:focus {
+        transform: scale(1.2);
+        color: #208307;
     }
 }
 
