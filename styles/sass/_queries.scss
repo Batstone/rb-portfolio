@@ -29,15 +29,12 @@
         background-color: black;
     }
 
-    .element {
-        &::before {
-            top: -120px;
-            right: -300px;
-            transform: rotate(35deg);
-        }
-    }
-
     .header {
+        &__img {
+            top: -200px;
+            right: -100px;
+            transform: rotate(30deg);
+        }
         padding: 20px 0;
         &__mobile-icon-container {
             display: flex;
@@ -48,8 +45,8 @@
                 display: none;
                 flex-direction: column;
                 position: absolute;
-                top: -65px;
-                left: 20px;
+                top: -25px;
+                left: -20px;
                 &__link {
                     margin-left: 0;
                     margin-top: 15px;
@@ -62,9 +59,6 @@
 
     .about {
         @include grid(1fr);
-        h1 {
-            width: 70%;
-        }
     }
 
     /* RESEACRCH */

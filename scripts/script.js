@@ -21,11 +21,14 @@ $(function () {
         if (direction === "down") {
             $('.header')
                 .addClass('sticky')
-                .removeClass('element')
+            $('.header__img').css('display', 'none')
+            $('.header__nav__list').css('justify-content', 'center')
         } else {
             $('.header')
                 .removeClass('sticky')
-                .addClass('element')
+            $('.header__img').css('display', 'block')
+            $('.header__nav__list').css('justify-content', 'flex-start')
+            $('.header__nav__list').css('justify-content', 'center')
         }
     }, {
         offset: '40px;'

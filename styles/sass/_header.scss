@@ -1,38 +1,28 @@
 
-.element {
-    position: relative;
-    z-index: 1;
-    &::before {
-        z-index: 0;
-        content: '';
-        position: absolute;
-        height: 400px;
-        width: 600px;
-        background-image: url(../../assets/roots-removebg-preview.png);
-        background-repeat: no-repeat;
-        -webkit-filter: invert(1);
-        filter: invert(1);
-        top: -70px;
-        right: -300px;
-        transform: rotate(40deg);
-    }
-}
-
-
 .header {
     background-color: black;
+    position: relative;
     padding-bottom: 15px;
+    &__img {
+        z-index: 0;
+        position: absolute;
+        -webkit-filter: invert(1);
+        filter: invert(1);
+        top: -155px;
+        right: -100px;
+        transform: rotate(60deg);
+    }
     &__mobile-icon-container {
         background: rgba(255, 255, 255, 0);
         border: none;
         display:none;
     }
     &__mobile-icon {
-        margin: 5px 15px;
+        padding: 5px 15px;
         font-size: 30px;
     }
     &__mobile-icon--active {
-        margin: 5px 15px;
+        padding: 5px 15px;
         font-size: 30px;
         color: #208307;
     }
@@ -41,7 +31,7 @@
         &__list {
             display: flex;
             width: 80%;
-            margin-left: 5%;
+            margin-left: 2%;
             padding: 30px 20px;
             list-style-type: none;
             display: flex;
