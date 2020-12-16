@@ -1,5 +1,7 @@
 
 .about {
+    z-index: 3;
+    position: relative;
     color: white;
     @include grid(1fr 1fr);
     align-items: center;

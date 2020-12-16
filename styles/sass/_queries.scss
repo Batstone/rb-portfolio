@@ -1,6 +1,13 @@
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
 
+    /* RESEARCH */
+
+    .post-1 {
+        i {
+            top: 0%;
+        }
+    }
 }
 
 /* Landscape phone to portrait tablet */
@@ -31,22 +38,20 @@
 
     .header {
         &__img {
-            top: -200px;
-            right: -100px;
-            transform: rotate(30deg);
+            top: -245px;
+            left: 220px;
+            width: 350px;
+            transform: scaleX(1);
+            overflow: hidden;
         }
-        padding: 20px 0;
         &__mobile-icon-container {
             display: flex;
         }
         &__nav {
-            position: relative;
             &__list {
                 display: none;
                 flex-direction: column;
-                position: absolute;
-                top: -25px;
-                left: -20px;
+                width: 10%;
                 &__link {
                     margin-left: 0;
                     margin-top: 15px;
@@ -69,7 +74,7 @@
             z-index: 1;
             i {
                 top: -5%;
-                left: -10%;
+                left: -3%;
             }
             &__text-1 {
                 width: 100%;
@@ -196,14 +201,14 @@
     }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 680px) {
 
     /* FOOTER */
 
     .footer {
         &__nav-list {
             a {
-                margin: 0 10px;
+                margin: 0 2px;
             }
         }
     }
@@ -235,11 +240,12 @@
 
     /* HEADER */
     
-    .element {
-        &::before {
-            top: -250px;
-            right: -400px;
-            transform: rotate(35deg);
+    .header {
+        &__img {
+            top: -245px;
+            left: 50px;
+            width: 350px;
+            transform: scaleX(1);
         }
     }
 

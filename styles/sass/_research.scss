@@ -1,18 +1,16 @@
 
 h2 {
-    font-size: 40px;
-    font-weight: bold;
     margin-bottom: 30px;
 }
 
 h3 {
-    font-size: 30px;
+
     margin-bottom: 30px;
 }
+
 p {
     font-size: 16px;
 }
-
 
 .img-container {
     margin: 30px 0;
@@ -48,10 +46,10 @@ p {
         i {
             z-index: -1;
             position: absolute;
-            font-size: 180px;
-            color: rgba(185, 24, 24, 0.171);
+            font-size: 120px;
+            color: rgba(74, 128, 74, 0.295);
             top: 15%;
-            left: -3%;
+            left: -1%;
         }
         &__text-1 {
             width: 50%;
@@ -70,14 +68,12 @@ p {
     }
 }
 
-
 .post-2 {
     @include grid(1fr 1fr);
     &__container-1 {
         &__img-1 {
             width: 100%;
             img {
-                @include dark-img();
                 width: 100%;
             }
         }
@@ -93,7 +89,6 @@ p {
         &__img-2 {
             width: 100%;
             img {
-                @include dark-img();
                 width: 100%;
             }
         }
@@ -127,7 +122,6 @@ p {
         &__img-1 {
             width: 100%;
             img {
-                @include dark-img();
                 width: 60%;
             }
         }
@@ -166,7 +160,6 @@ p {
         &__img-2 {
             width: 48%;
             img {
-                @include dark-img();
                 width: 100%;
             }
         }
@@ -184,7 +177,6 @@ p {
         &__img-1 {
             width: 100%;
             img {
-                @include dark-img();
                 width: 100%;
             }
         }
@@ -193,7 +185,6 @@ p {
         &__img-1 {
             width: 100%;
             img {
-                @include dark-img();
                 width: 100%;
             }
         }
