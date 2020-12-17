@@ -38,20 +38,19 @@
 
     .header {
         &__img {
-            top: -245px;
-            left: 220px;
+            left: 180px;
+            top: -280px;
             width: 350px;
-            transform: scaleX(1);
-            overflow: hidden;
         }
         &__mobile-icon-container {
             display: flex;
         }
         &__nav {
+            width: 0%;
             &__list {
                 display: none;
                 flex-direction: column;
-                width: 10%;
+          
                 &__link {
                     margin-left: 0;
                     margin-top: 15px;
@@ -199,6 +198,55 @@
             width: 100%;
         }
     }
+
+    /* TALKS */
+
+    .talks-1 {
+        &__container-1 {
+            flex-direction: column;
+            align-items: center;
+            &__text-1 {
+                width: 100%;
+                margin-bottom: 25px;
+            }
+            &__img-1 {
+                width: 80%
+            }
+        }
+    }
+
+    .talks-2 {
+        &__container-1 {
+            &__img-1 {
+                width: 80%;
+                margin-top: 25px;
+            }
+        }
+    }
+
+    .talks-3 {
+        &__container-1 {
+            flex-direction: column;
+            align-items: center;
+            &__vid-1 {
+                width: 100%;
+            }
+            &__text-1 {
+                width: 100%;
+            }
+        }
+        &__container-2 {
+            flex-direction: column;
+            &__vid-1 {
+                width: 100%;
+            }
+            &__text-1 {
+                width: 100%;
+            }
+        }
+    }
+
+
 }
 
 @media (max-width: 680px) {
@@ -214,7 +262,16 @@
     }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 600px) {
+
+    /* HEADER */
+
+    .header {
+        &__img {
+            left: 85px;
+            top: -250px;
+        }
+    }
 
     /* FOOTER */
 
@@ -242,9 +299,9 @@
     
     .header {
         &__img {
-            top: -245px;
-            left: 50px;
-            width: 350px;
+            top: -150px;
+            left: 100px;
+            width: 250px;
             transform: scaleX(1);
         }
     }
@@ -293,6 +350,18 @@
     .microbia {
         width: 100%;
     }
-    
+}
+
+@media (max-width: 400px) {
+
+    .header {
+        &__img {
+            top: -150px;
+            left: 80px;
+            width: 200px;
+            transform: scaleX(1);
+        }
+    }
+
 
 }
