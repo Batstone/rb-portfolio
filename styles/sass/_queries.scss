@@ -11,7 +11,7 @@
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: 780px) {
 
     .dark,
     .light {
@@ -57,12 +57,18 @@
                 }
             }
         }
+        &__social-list {
+            display: none;
+        }
     }
 
     /* MAIN */
 
     .about {
         @include grid(1fr);
+        &__social-container {
+            display: block;
+        }
     }
 
     /* RESEACRCH */

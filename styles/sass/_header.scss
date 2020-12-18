@@ -71,6 +71,26 @@
             }
         }
     }
+    &__social-list {
+        position: fixed;
+        top: 32%;
+        z-index: 3;
+        li {
+            margin-bottom: 25px;
+        }
+        i {
+            color: black;
+            font-size: 25px;
+            background-color: rgb(74, 128, 74);
+            border-radius: 50%;;
+            padding: 15px 15px;
+            &:hover,
+            &:focus {
+                color: white;
+                background-color: black;
+            }
+        }
+    }
 }
 
 .sticky {

@@ -3,6 +3,7 @@
 .footer {
     margin-top: 100px;
     background-color: black;
+    padding-bottom: 15px;
     &__container {
         display: flex;
         align-items: center;
@@ -29,13 +30,19 @@
         }
     }
     a {
-        color: rgb(74, 128, 74);
         display: inline-block;
         transition: .2s;
-        &:hover,
-        &:focus {
-            transform: scale(1.2);
+    }
+    &__container {
+        &__design {
+            font-size: 12px;
+            margin-top: 15px;
             color: white;
+            &:hover,
+            &:focus {
+                color: rgb(74, 128, 74);
+            }
         }
     }
+  
 }

@@ -1,4 +1,3 @@
-
 .about {
     z-index: 3;
     position: relative;
@@ -38,6 +37,9 @@
             width: 100%;
         }
     }
+    &__social-container {
+        display: none;
+    }
     &__social-list {
         display: flex;
         justify-content: center;
@@ -48,16 +50,26 @@
             font-size: 25px;
         }
     }
+    &__news {
+        &__list {
+            font-size: 16px;
+            line-height: 1.8;
+            i {
+                color: rgb(74, 128, 74);
+                font-size: 30px;
+            }
+            &__item {
+                margin-top: 25px;
+            }
+            span {
+                font-style: italic;
+            }
+        }
+    }
 }
 
 .info {
     p {
         margin-top: 40px;
-    }
-    &__text-container {
-        h2 {
-            width: 80%;
-            display: inline;
-        }
     }
 }

@@ -235,17 +235,11 @@ html {
   background-color: #ebebeb;
 }
 
-.wrapper {
-  max-width: 1080px;
-  margin: 0 auto;
-  width: 90%;
-}
-
 body {
   font-family: 'Merriweather', serif;
 }
 
-h1, h2 {
+h1 {
   font-family: 'Julius Sans One', sans-serif;
   color: #4a804a;
 }
@@ -259,15 +253,19 @@ h1 {
 h2 {
   font-size: 40px;
   line-height: 1.3;
+  margin-bottom: 30px;
+  font-family: 'Merriweather', serif;
+  color: #4a804a;
 }
 
 h3 {
   font-size: 30px;
   line-height: 1.3;
+  margin-bottom: 30px;
 }
 
 p {
-  font-size: clamp(0.9rem, 1.2vw, 1.3rem);
+  font-size: 16px;
   line-height: 2;
 }
 
@@ -278,6 +276,7 @@ p i {
 
 a {
   text-decoration: none;
+  color: #4a804a;
 }
 
 nav {
@@ -312,10 +311,16 @@ i:hover, i:focus {
   color: #4a804a;
 }
 
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  width: 90%;
+}
+
 .dark {
   background-color: black;
   color: white;
-  max-width: 1080px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 90%;
   padding: 100px 20px;
@@ -324,10 +329,17 @@ i:hover, i:focus {
 .light {
   background-color: white;
   color: black;
-  max-width: 1080px;
+  max-width: 1200px;
   margin: 0 auto;
   width: 90%;
   padding: 100px 20px;
+}
+
+.sub-text {
+  font-size: 12px;
+  text-align: center;
+  line-height: 1.5;
+  margin: 15px 0;
 }
 
 .header {
@@ -391,6 +403,29 @@ i:hover, i:focus {
   margin-left: 20px;
 }
 
+.header__social-list {
+  position: fixed;
+  top: 32%;
+  z-index: 3;
+}
+
+.header__social-list li {
+  margin-bottom: 25px;
+}
+
+.header__social-list i {
+  color: black;
+  font-size: 25px;
+  background-color: #4a804a;
+  border-radius: 50%;
+  padding: 15px 15px;
+}
+
+.header__social-list i:hover, .header__social-list i:focus {
+  color: white;
+  background-color: black;
+}
+
 .sticky {
   position: fixed;
   top: 0;
@@ -413,6 +448,7 @@ i:hover, i:focus {
 .footer {
   margin-top: 100px;
   background-color: black;
+  padding-bottom: 15px;
 }
 
 .footer__container {
@@ -460,16 +496,19 @@ i:hover, i:focus {
 }
 
 .footer a {
-  color: #4a804a;
   display: inline-block;
   -webkit-transition: .2s;
   transition: .2s;
 }
 
-.footer a:hover, .footer a:focus {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
+.footer__container__design {
+  font-size: 12px;
+  margin-top: 15px;
   color: white;
+}
+
+.footer__container__design:hover, .footer__container__design:focus {
+  color: #4a804a;
 }
 
 .about {
@@ -535,6 +574,10 @@ i:hover, i:focus {
   width: 100%;
 }
 
+.about__social-container {
+  display: none;
+}
+
 .about__social-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -552,37 +595,30 @@ i:hover, i:focus {
   font-size: 25px;
 }
 
+.about__news__list {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+.about__news__list i {
+  color: #4a804a;
+  font-size: 30px;
+}
+
+.about__news__list__item {
+  margin-top: 25px;
+}
+
+.about__news__list span {
+  font-style: italic;
+}
+
 .info p {
   margin-top: 40px;
 }
 
-.info__text-container h2 {
-  width: 80%;
-  display: inline;
-}
-
-h2 {
-  margin-bottom: 30px;
-}
-
-h3 {
-  margin-bottom: 30px;
-}
-
-p {
-  font-size: 16px;
-}
-
 .img-container {
   margin: 30px 0;
-}
-
-.sub-text {
-  font-size: 12px;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 1.5;
-  margin: 15px 0;
 }
 
 .post-title-center {
@@ -811,14 +847,6 @@ p {
   width: 100%;
 }
 
-.sub-text {
-  font-size: 12px;
-  text-transform: uppercase;
-  text-align: center;
-  line-height: 1.5;
-  margin: 15px 0;
-}
-
 .post-title-center {
   text-align: center;
   margin: 15px auto 40px;
@@ -936,6 +964,9 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin-bottom: 40px;
 }
 
@@ -958,6 +989,9 @@ p {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .talks-3__container-2__vid-1 {
@@ -981,7 +1015,7 @@ p {
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: 780px) {
   .dark,
   .light {
     width: 100%;
@@ -1023,6 +1057,9 @@ p {
     margin-left: 0;
     margin-top: 15px;
   }
+  .header__social-list {
+    display: none;
+  }
   /* MAIN */
   .about {
     display: -ms-grid;
@@ -1030,6 +1067,9 @@ p {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-gap: 50px;
+  }
+  .about__social-container {
+    display: block;
   }
   /* RESEACRCH */
   .post-1__container-1 {
