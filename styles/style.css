@@ -286,7 +286,7 @@ nav {
 
 nav a {
   letter-spacing: 2px;
-  font-size: 21px;
+  font-size: 20px;
   color: #4a804a;
   border-bottom: 1px solid transparent;
   -webkit-transition: .5s;
@@ -295,7 +295,11 @@ nav a {
 }
 
 nav a:hover, nav a:focus {
-  border-bottom: 1px solid white;
+  color: #afafaf;
+}
+
+nav a:hover:after, nav a:focus:after {
+  width: 100%;
 }
 
 i {
@@ -340,6 +344,8 @@ i:hover, i:focus {
   text-align: center;
   line-height: 1.5;
   margin: 15px 0;
+  position: relative;
+  z-index: 4;
 }
 
 .header {
@@ -368,6 +374,8 @@ i:hover, i:focus {
 }
 
 .header__mobile-icon {
+  position: relative;
+  z-index: 3;
   padding: 5px 15px;
   font-size: 30px;
 }
@@ -405,7 +413,7 @@ i:hover, i:focus {
 
 .header__social-list {
   position: fixed;
-  top: 32%;
+  top: 30%;
   z-index: 3;
 }
 

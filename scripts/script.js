@@ -40,7 +40,6 @@ $(function () {
             - parseInt($(pageElement).css("borderLeftWidth"), 10)
             - $(pageElement).width() + "px");
     }
-
     $(window).resize(function () {
         placeOnRightHandEdgeOfElement(".header__social-list", ".wrapper");
     });
