@@ -25,8 +25,8 @@
             z-index: -1;
             position: absolute;
             font-size: 120px;
-            color: rgba(74, 128, 74, 0.295);
-            top: 15%;
+            color: rgba(83, 172, 83, 0.295);
+            top: 25%;
             left: -1%;
         }
         &__text-1 {
@@ -59,7 +59,7 @@
     &__container-2 {
         &__img-1 {
             margin: 0 auto 50px;
-            width: 85%;
+            width: 55%;
             img {
                 width: 100%;
             }
@@ -79,7 +79,7 @@
         text-align: center;
         &__img-1 {
             margin: 0 auto;
-            width: 80%;
+            width: 60%;
             img {
                 width: 100%;
             }
@@ -151,14 +151,6 @@
 
 .post-6 {
     @include grid(1fr 1fr);
-    &__container-1 {
-        &__img-1 {
-            width: 100%;
-            img {
-                width: 100%;
-            }
-        }
-    }
     &__container-2 {
         &__img-1 {
             width: 100%;

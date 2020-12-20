@@ -22,13 +22,14 @@ $(function () {
             $('.header__img').css('display', 'none')
             $('.header__nav__list').css({ 'justify-content': 'center', 'padding': '5px 10px' })
             $('.header__nav__list__item').css('background-color', 'rgba(255, 255, 255, 0.0)')
+            $('.js-link').removeClass('nav__list__item--active')
         } else {
             $('.header')
                 .removeClass('sticky')
             $('.header__img').css('display', 'block')
             $('.header__nav__list').css({ 'justify-content': 'flex-end', 'padding': '30px 10px' })
             $('.header__nav__list__item').css('background-color', 'black')
-
+            $('.js-link').addClass('nav__list__item--active')
         }
     }, {
         offset: '40px;'

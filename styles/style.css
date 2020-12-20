@@ -266,7 +266,7 @@ h3 {
 
 p {
   font-size: 16px;
-  line-height: 2;
+  line-height: 1.7;
 }
 
 p i {
@@ -300,6 +300,10 @@ nav a:hover, nav a:focus {
 
 nav a:hover:after, nav a:focus:after {
   width: 100%;
+}
+
+.nav__list__item--active {
+  color: white;
 }
 
 i {
@@ -666,8 +670,8 @@ i:hover, i:focus {
   z-index: -1;
   position: absolute;
   font-size: 120px;
-  color: rgba(74, 128, 74, 0.295);
-  top: 15%;
+  color: rgba(83, 172, 83, 0.295);
+  top: 25%;
   left: -1%;
 }
 
@@ -705,7 +709,7 @@ i:hover, i:focus {
 
 .post-2__container-2__img-1 {
   margin: 0 auto 50px;
-  width: 85%;
+  width: 55%;
 }
 
 .post-2__container-2__img-1 img {
@@ -734,7 +738,7 @@ i:hover, i:focus {
 
 .post-3__container-2__img-1 {
   margin: 0 auto;
-  width: 80%;
+  width: 60%;
 }
 
 .post-3__container-2__img-1 img {
@@ -837,14 +841,6 @@ i:hover, i:focus {
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
-}
-
-.post-6__container-1__img-1 {
-  width: 100%;
-}
-
-.post-6__container-1__img-1 img {
-  width: 100%;
 }
 
 .post-6__container-2__img-1 {
