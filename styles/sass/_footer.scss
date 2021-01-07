@@ -1,5 +1,3 @@
-
-
 .footer {
     margin-top: 100px;
     background-color: black;
@@ -14,35 +12,32 @@
         display: flex;
         padding: 25px 0;
         font-size: 18px;
-        a {
-            margin: 0 10px;
-        }
+    }
+    &__link {
+        margin: 0 10px;
     }
     &__social-list {
         display: flex;
         justify-content: center;
-        li {
-            margin: 20px;
-        }
-        i {
-            font-size: 30px;
-            color: white;
-        }
+    }
+    &__social-item {
+        margin: 20px;
+    }
+    &__social-icon {
+        font-size: 30px;
+        color: white;
+    }
+    &__design {
+        font-size: 12px;
+        margin-top: 15px;
+        color: white;
+    }
+    &__design:hover,
+    &__design:focus {
+        color: rgb(74, 128, 74);
     }
     a {
         display: inline-block;
         transition: .2s;
     }
-    &__container {
-        &__design {
-            font-size: 12px;
-            margin-top: 15px;
-            color: white;
-            &:hover,
-            &:focus {
-                color: rgb(74, 128, 74);
-            }
-        }
-    }
-  
 }

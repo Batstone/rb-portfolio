@@ -13,16 +13,13 @@
     }
     &__text-container {
         border-top: 2px solid rgb(255, 255, 255);
+        padding-top: 15px;
         margin-top: 25px;
-        p {
-            margin-top: 20px;
-            span {
-                font-weight: bold;
-            }
-            i {
-                color: #208307;
-                cursor: auto;
-            }
+    }
+    &__text {
+        margin: 20px 0;
+        span {
+            font-weight: bold;
         }
     }
     &__img-social {
@@ -50,26 +47,28 @@
             font-size: 25px;
         }
     }
-    &__news {
-        &__list {
-            font-size: 16px;
-            line-height: 1.8;
-            i {
-                color: rgb(74, 128, 74);
-                font-size: 30px;
-            }
-            &__item {
-                margin-top: 25px;
-            }
-            span {
-                font-style: italic;
-            }
-        }
+}
+
+.news {
+    &__list {
+        font-size: 16px;
+        line-height: 1.8;
+    }
+    &__icon {
+        font-size: 25px;
+        color: #208307;
+        cursor: auto;
+    }
+    &__item {
+        margin-top: 25px;
+    }
+    span {
+        font-style: italic;
     }
 }
 
 .info {
-    p {
+    &__text {
         margin-top: 40px;
     }
 }

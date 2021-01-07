@@ -20,42 +20,40 @@
                         title="Hamburger Menu"></i></button>
                 <span class="sr-only">Hamburger icon to trigger mobile navigation</span>
                 <nav class="header__nav">
-                    <ul class="header__nav__list" id="js-nav">
-                        <li class="header__nav__list__item"><a href="./index.html">Home</a></li>
-                        <li class="header__nav__list__item header__nav__list__link"><a
-                                href="./research.html">Research</a>
+                    <ul class="header__list" id="js-nav">
+                        <li class="header__list-item"><a href="./index.html" class="js-link nav__item--active">Home</a>
                         </li>
-                        <li class="header__nav__list__item header__nav__list__link"><a
-                                href="./teaching.html">Teaching/Outreach</a></li>
-                        <li class="header__nav__list__item header__nav__list__link"><a href="./talks.html"
-                                class="js-link nav__list__item--active">Talks</a>
+                        <li class="header__list-item"><a href="./research.html">Research</a>
+                        </li>
+                        <li class="header__list-item"><a href="./teaching.html">Teaching/Outreach</a></li>
+                        <li class="header__list-item"><a href="./talks.html">Talks</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
         <ul class="header__social-list">
-            <li><a href="https://twitter.com/BatstoneRebecca" target="_blank"><i class="fab fa-twitter"></i></a>
+            <li class="header__social-item"><a href="https://twitter.com/BatstoneRebecca" target="_blank"><i
+                        class="fab fa-twitter header__social-icon"></i></a>
             </li>
-            <li><a href="https://www.instagram.com/rebeccabatstone/" target="_blank"><i
-                        class="fab fa-instagram"></i></a>
+            <li class="header__social-item"><a href="https://www.instagram.com/rebeccabatstone/" target="_blank"><i
+                        class="fab fa-instagram header__social-icon"></i></a>
             </li>
-            <li><a href="https://github.com/rtbatstone" target="_blank"><i class="fab fa-github"></i></a>
+            <li class="header__social-item"><a href="https://github.com/rtbatstone" target="_blank"><i
+                        class="fab fa-github header__social-icon"></i></a>
             </li>
-            <li><a href="mailto:rtbatstone@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
+            <li class="header__social-item"><a href="mailto:rtbatstone@gmail.com"><i
+                        class="fas fa-envelope-square header__social-icon"></i></a>
+            </li>
         </ul>
     </header>
 
     <main>
-        <!-- <div class="wrapper">
-            <h1 class="title">Talks</h1>
-        </div> -->
-
         <section class="dark talks-1 js--main-intro">
             <div class="wrapper">
                 <h2>Giving effective scientific presentations</h2>
                 <div class="talks-1__container-1">
-                    <div class="talks-1__container-1__text-1">
+                    <div class="talks-1__text-1">
                         <p>Despite how nerve-racking giving a talk can be, I end up finding the process of putting a
                             talk together, and then presenting in front of colleagues,
                             a
@@ -64,7 +62,7 @@
                             way an audience can follow, is super challenging, but for me, is worth investing in and
                             improving. </p>
                     </div>
-                    <div class="talks-1__container-1__img-1">
+                    <div class="talks-1__img-1">
                         <a href="./assets/talks/Presentation_guide.pdf"><img src="./assets/talks/presentation-guide.jpg"
                                 alt=""></a>
                     </div>
@@ -85,13 +83,13 @@
             <div class="wrapper">
                 <h2>ASN stand-alone meeting (Jan 2020)</h2>
                 <div class="talks-2__container-1 js--main-nav">
-                    <div class="talks-2__container-1__text-1">
+                    <div class="talks-2__text-1">
                         <p>I was fortunate enough to have Callie Chapelle (@eco_genome) attend my talk back in Jan of
                             this
                             year. Not only is she an awesome person to interact with, but she made this beautiful
                             illustration of my talk - during my talk in real time!</p>
                     </div>
-                    <div class="talks-2__container-1__img-1">
+                    <div class="talks-2__img-1">
                         <img src="./assets/talks/asntalk_orig.jpg"
                             alt="Illustration of a talk I gave at ASN AmNat 2020.">
                     </div>
@@ -103,12 +101,12 @@
             <div class="wrapper">
                 <h2>Evolution 2019 (Hamilton Symposium) - Rhode Island</h2>
                 <div class="talks-3__container-1">
-                    <div class="talks-3__container-1__vid-1">
+                    <div class="talks-3__vid-1">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/vitQxOUy3wU" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
-                    <div class="talks-3__container-1__text-1">
+                    <div class="talks-3__text-1">
                         <p>I was honored to be selected as a finalist for the Hamilton Award at last year's Evolution
                             conference. The tallks within the symposium were outstanding, and I was fortunate enough to
                             meet many of the other finalists after the symposium for dinner. </p>
@@ -116,13 +114,13 @@
                 </div>
                 <h2>Evolution 2015 - Brazil</h2>
                 <div class="talks-3__container-2">
-                    <div class="talks-3__container-2__text-1">
+                    <div class="talks-3__text-2">
                         <p>This was my first oral presentation of my PhD, and I had only recently analyzed the data.
                             It's interesting to see glimpses of the scientific journey, from designing an experiment, to
                             collecting the data, interpreting what it means, and then eventually publishing the story.
                             The time and mental energy spent to achieve the latter is easy to forget years later. </p>
                     </div>
-                    <div class="talks-3__container-2__vid-1">
+                    <div class="talks-3__vid-2">
                         <iframe width="560" height="315" src="https://www.youtube.com/embed/bz08xWHWZmA" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -140,26 +138,30 @@
             <div class="footer__container">
                 <div class="about__social-container">
                     <ul class="footer__social-list">
-                        <li><a href="https://twitter.com/BatstoneRebecca" target="_blank"><i
-                                    class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://www.instagram.com/rebeccabatstone/" target="_blank"><i
-                                    class="fab fa-instagram"></i></a>
+                        <li class="footer__social-item"><a href="https://twitter.com/BatstoneRebecca" target="_blank"><i
+                                    class="fab fa-twitter footer__social-icon"></i></a></li>
+                        <li class="footer__social-item"><a href="https://www.instagram.com/rebeccabatstone/"
+                                target="_blank"><i class="fab fa-instagram footer__social-icon"></i></a>
                         </li>
-                        <li><a href="https://github.com/rtbatstone" target="_blank"><i class="fab fa-github"></i></a>
+                        <li class="footer__social-item"><a href="https://github.com/rtbatstone" target="_blank"><i
+                                    class="fab fa-github footer__social-icon"></i></a>
                         </li>
-                        <li><a href="mailto:rtbatstone@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
+                        <li class="footer__social-item"><a href="mailto:rtbatstone@gmail.com"><i
+                                    class="fas fa-envelope-square footer__social-icon"></i></a></li>
                     </ul>
                 </div>
                 <nav class="footer-nav">
                     <ul class="footer__nav-list">
-                        <li class="footer__nav-link"><a href="./index.html">Home</a></li>
-                        <li class="footer__nav-link"><a href="./research.html">Research</a></li>
-                        <li class="footer__nav-link"><a href="./teaching.html">Teaching/Outreach</a></li>
-                        <li class="footer__nav-link"><a href="./talks.html" class="nav__list__item--active">Talks</a>
+                        <li class="footer__list-item"><a class="footer__link nav__item--active"
+                                href="./index.html">Home</a>
                         </li>
+                        <li class="footer__list-item"><a class="footer__link" href="./research.html">Research</a></li>
+                        <li class="footer__nav-link"><a class="footer__link"
+                                href="./teaching.html">Teaching/Outreach</a></li>
+                        <li class="footer__nav-link"><a class="footer__link" href="./talks.html">Talks</a></li>
                     </ul>
                 </nav>
-                <a href="https://www.adambatstone.dev/" target="_blank" class="footer__container__design">&copy; 2020
+                <a href="https://www.adambatstone.dev/" target="_blank" class="footer__design">&copy; 2020
                     BSTONE Web
                     Design</a>
             </div>

@@ -1,29 +1,8 @@
-// @keyframes slideIn {
-//     0% {
-//         height: 208px;
-//     }
-//     100% {
-//        height: 0px;
-//     }
-// }
-
 .header {
     z-index: 1;
     background-color: black;
     position: relative;
     padding: 10px 0;
-    // &::before {
-    //     z-index: 5;
-    //     content: '';
-    //     background-color: black;
-    //     width: 420px;
-    //     height: 208px;
-    //     top: 0;
-    //     position: absolute;
-    //     animation: slideIn 5s linear 0s 1;
-    //     animation-fill-mode: forwards;
-    //     overflow: hidden;
-    // }
     &__img {
         z-index: 2;
         position: absolute;
@@ -53,39 +32,40 @@
     &__nav {
         position: relative;
         z-index: 3;
-        &__list {
-            display: flex;
-            padding: 30px 10px;
-            list-style-type: none;
-            justify-content: flex-end;
-            margin-right: 25px;
-            &__item {
-                background-color: black;
-            }
-            &__link {
-                margin-left: 20px;
-            }
-        }
     }
+    &__list {
+        display: flex;
+        padding: 30px 10px;
+        list-style-type: none;
+        justify-content: flex-end;
+        margin-right: 25px;
+    }
+    &__list-item {
+        background-color: black;
+        margin-left: 20px;
+    }
+    // &__link {
+    //     margin-left: 20px;
+    // }
     &__social-list {
         position: fixed;
         top: 30%;
         z-index: 3;
-        li {
-            margin-bottom: 25px;
-        }
-        i {
-            color: black;
-            font-size: 25px;
-            background-color: rgb(74, 128, 74);
-            border-radius: 50%;;
-            padding: 15px 15px;
-            &:hover,
-            &:focus {
-                color: white;
-                background-color: black;
-            }
-        }
+    }
+    &__social-item {
+        margin-bottom: 25px;
+    }
+    &__social-icon {
+        color: black;
+        font-size: 25px;
+        background-color: rgb(74, 128, 74);
+        border-radius: 50%;;
+        padding: 15px 15px;
+    }
+    &__social-icon:hover,
+    &__social-icon:focus {
+        color: white;
+        background-color: black;
     }
 }
 

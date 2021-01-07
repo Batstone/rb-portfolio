@@ -20,35 +20,38 @@
                         title="Hamburger Menu"></i></button>
                 <span class="sr-only">Hamburger icon to trigger mobile navigation</span>
                 <nav class="header__nav">
-                    <ul class="header__nav__list" id="js-nav">
-                        <li class="header__nav__list__item"><a href="./index.html">Home</a></li>
-                        <li class="header__nav__list__item header__nav__list__link"><a
-                                href="./research.html">Research</a>
+                    <ul class="header__list" id="js-nav">
+                        <li class="header__list-item"><a href="./index.html" class="js-link nav__item--active">Home</a>
                         </li>
-                        <li class="header__nav__list__item header__nav__list__link"><a href="./teaching.html"
-                                class="js-link nav__list__item--active">Teaching/Outreach</a></li>
-                        <li class="header__nav__list__item header__nav__list__link"><a href="./talks.html">Talks</a>
+                        <li class="header__list-item"><a href="./research.html">Research</a>
+                        </li>
+                        <li class="header__list-item"><a href="./teaching.html">Teaching/Outreach</a></li>
+                        <li class="header__list-item"><a href="./talks.html">Talks</a>
                         </li>
                     </ul>
                 </nav>
             </div>
         </div>
         <ul class="header__social-list">
-            <li><a href="https://twitter.com/BatstoneRebecca" target="_blank"><i class="fab fa-twitter"></i></a>
+            <li class="header__social-item"><a href="https://twitter.com/BatstoneRebecca" target="_blank"><i
+                        class="fab fa-twitter header__social-icon"></i></a>
             </li>
-            <li><a href="https://www.instagram.com/rebeccabatstone/" target="_blank"><i
-                        class="fab fa-instagram"></i></a>
+            <li class="header__social-item"><a href="https://www.instagram.com/rebeccabatstone/" target="_blank"><i
+                        class="fab fa-instagram header__social-icon"></i></a>
             </li>
-            <li><a href="https://github.com/rtbatstone" target="_blank"><i class="fab fa-github"></i></a>
+            <li class="header__social-item"><a href="https://github.com/rtbatstone" target="_blank"><i
+                        class="fab fa-github header__social-icon"></i></a>
             </li>
-            <li><a href="mailto:rtbatstone@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
+            <li class="header__social-item"><a href="mailto:rtbatstone@gmail.com"><i
+                        class="fas fa-envelope-square header__social-icon"></i></a>
+            </li>
         </ul>
     </header>
 
     <main>
         <section class="dark js--main-intro">
             <div class="wrapper">
-                <div class="teaching__container-1">
+                <div class="teaching-philosophy">
                     <h2>Teaching philosophy</h2>
                     <p>My overarching goal as a teacher is to develop innovative ways to spark curiosity in students,
                         regardless of the specific subject being covered. Reflecting on my own experiences as an
@@ -70,12 +73,12 @@
         <section class="light">
             <div class="wrapper">
                 <h2>News Update:</h2>
-                <div class="news__container-1 js--main-nav">
-                    <div class="news__container-1__img-1 img-container">
+                <div class="teaching js--main-nav">
+                    <div class="teaching__img-1 img-container">
                         <img src="./assets/teaching/sib-header.jpg"
                             alt="Logo for the School of Integrative Biology, University of Illinois.">
                     </div>
-                    <div class="news__container-1__text-1">
+                    <div class="teaching__text-1">
                         <p>I will be the lead course instructor for IB372 (Evolution) in the fall (2020)!!!! Super
                             excited to get more teaching experience, meet the awesome IB hons undergrads, and join the
                             SIB teaching team!</p>
@@ -91,11 +94,11 @@
                 <h2 class="post-title-center">Microbia: the board game!</h2>
                 <div class="microbia">
                     <div class="microbia__container-1">
-                        <div class="microbia__container-1__img-1">
+                        <div class="microbia__img-1">
                             <img src="./assets/teaching/microbes_orig.jpg"
                                 alt="Microbe and mobile DNA cartoon illustrations.">
                         </div>
-                        <div class="microbia__container-1__img-2 img-container">
+                        <div class="microbia__img-2 img-container">
                             <img src="./assets/teaching/board.png"
                                 alt="Example board set up, mobile DNA placed on top of microbes.">
                             <p class="sub-text">Top: initial sketches of microbes and mobile DNA. Each microbe has its
@@ -165,12 +168,12 @@
         <section class="light">
             <div class="wrapper">
                 <div class="comic">
-                    <div class="comic__container">
-                        <div class="comic__container__img-1">
+                    <div class="comic__container=1">
+                        <div class="comic__img-1">
                             <img src="./assets/teaching/fixer_orig.jpg"
                                 alt="Example comic illustrated for the IFB world of genomics.">
                         </div>
-                        <div class="comic__container__img-2 img-container">
+                        <div class="comic__img-2 img-container">
                             <img src="./assets/teaching/fixer-col_orig.jpg"
                                 alt="comic-strip illustrated for the IGB world of genomics.">
                             <p class="sub-text">Example of a coloring page distributed at IGB's "World of Genomics", and
@@ -193,26 +196,30 @@
             <div class="footer__container">
                 <div class="about__social-container">
                     <ul class="footer__social-list">
-                        <li><a href="https://twitter.com/BatstoneRebecca" target="_blank"><i
-                                    class="fab fa-twitter"></i></a></li>
-                        <li><a href="https://www.instagram.com/rebeccabatstone/" target="_blank"><i
-                                    class="fab fa-instagram"></i></a>
+                        <li class="footer__social-item"><a href="https://twitter.com/BatstoneRebecca" target="_blank"><i
+                                    class="fab fa-twitter footer__social-icon"></i></a></li>
+                        <li class="footer__social-item"><a href="https://www.instagram.com/rebeccabatstone/"
+                                target="_blank"><i class="fab fa-instagram footer__social-icon"></i></a>
                         </li>
-                        <li><a href="https://github.com/rtbatstone" target="_blank"><i class="fab fa-github"></i></a>
+                        <li class="footer__social-item"><a href="https://github.com/rtbatstone" target="_blank"><i
+                                    class="fab fa-github footer__social-icon"></i></a>
                         </li>
-                        <li><a href="mailto:rtbatstone@gmail.com"><i class="fas fa-envelope-square"></i></a></li>
+                        <li class="footer__social-item"><a href="mailto:rtbatstone@gmail.com"><i
+                                    class="fas fa-envelope-square footer__social-icon"></i></a></li>
                     </ul>
                 </div>
                 <nav class="footer-nav">
                     <ul class="footer__nav-list">
-                        <li class="footer__nav-link"><a href="./index.html">Home</a></li>
-                        <li class="footer__nav-link"><a href="./research.html">Research</a></li>
-                        <li class="footer__nav-link"><a href="./teaching.html"
-                                class="nav__list__item--active">Teaching/Outreach</a></li>
-                        <li class="footer__nav-link"><a href="./talks.html">Talks</a></li>
+                        <li class="footer__list-item"><a class="footer__link nav__item--active"
+                                href="./index.html">Home</a>
+                        </li>
+                        <li class="footer__list-item"><a class="footer__link" href="./research.html">Research</a></li>
+                        <li class="footer__nav-link"><a class="footer__link"
+                                href="./teaching.html">Teaching/Outreach</a></li>
+                        <li class="footer__nav-link"><a class="footer__link" href="./talks.html">Talks</a></li>
                     </ul>
                 </nav>
-                <a href="https://www.adambatstone.dev/" target="_blank" class="footer__container__design">&copy; 2020
+                <a href="https://www.adambatstone.dev/" target="_blank" class="footer__design">&copy; 2020
                     BSTONE Web
                     Design</a>
             </div>

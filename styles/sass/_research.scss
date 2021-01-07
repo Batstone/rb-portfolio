@@ -2,11 +2,6 @@
     margin: 30px 0;
 }
 
-.post-title-center {
-    text-align: center;
-    margin: 20px auto 40px;
-}
-
 .title {
     width: 50%;
     margin: 0 auto 50px;
@@ -15,30 +10,30 @@
 
 .post-1 {
     @include grid();
+    i {
+        z-index: -1;
+        position: absolute;
+        font-size: 120px;
+        color: rgba(83, 172, 83, 0.295);
+        top: 25%;
+        left: -1%;
+    }
     &__container-1 {
         display: flex;
         justify-content: space-between;
         align-items: center;
         position: relative;
         z-index: 1;
-        i {
-            z-index: -1;
-            position: absolute;
-            font-size: 120px;
-            color: rgba(83, 172, 83, 0.295);
-            top: 25%;
-            left: -1%;
-        }
-        &__text-1 {
-            width: 50%;
-        }
-        &__img-1 {
+    }
+    &__text-1 {
+        width: 50%;
+    }
+    &__img-1 {
             width: 50%;
             img {
                 width: 100%;
             }
         }
-    }
     &__container-2 {
         p:last-child {
             margin-top: 25px;
@@ -48,27 +43,23 @@
 
 .post-2 {
     @include grid(1fr 1fr);
-    &__container-1 {
-        &__img-1 {
+    &__img-1 {
+        width: 100%;
+        img {
             width: 100%;
-            img {
-                width: 100%;
-            }
         }
     }
-    &__container-2 {
-        &__img-1 {
-            margin: 0 auto 50px;
-            width: 55%;
-            img {
-                width: 100%;
-            }
-        }
-        &__img-2 {
+    &__img-2 {
+        margin: 0 auto 50px;
+        width: 55%;
+        img {
             width: 100%;
-            img {
-                width: 100%;
-            }
+        }
+    }
+    &__img-3 {
+        width: 100%;
+        img {
+            width: 100%;
         }
     }
 }
@@ -77,48 +68,48 @@
     @include grid(1fr 1fr);
     &__container-2 {
         text-align: center;
-        &__img-1 {
-            margin: 0 auto;
-            width: 60%;
-            img {
-                width: 100%;
-            }
-        }
-        &__img-2 {
+    }
+    &__img-1 {
+        margin: 0 auto;
+        width: 60%;
+        img {
             width: 100%;
-            img {
-                width: 20%;
-            }
         }
     }
+    &__img-2 {
+        width: 100%;
+        img {
+            width: 20%;
+        }
+    }  
 }
 
 .post-4 {
     @include grid();
     &__container-1 {
         text-align: center;
-        &__img-1 {
-            width: 100%;
-            img {
-                width: 60%;
-            }
+    }
+    &__img-1 {
+        width: 100%;
+        img {
+            width: 60%;
         }
     }
     &__container-2 {
         display: flex;
         justify-content: space-around;
         text-align: center;
-        &__img-1 {
-            width: 45%;
-            img {
-                width: 100%
-            }
+    }
+    &__img-2 {
+        width: 45%;
+        img {
+            width: 100%
         }
-        &__img-2 {
-            width: 30%;
-            img {
-                width: 100%;
-            }
+    }
+    &__img-3 {
+        width: 30%;
+        img {
+            width: 100%;
         }
     }
 }
@@ -129,17 +120,17 @@
         display: flex;
         justify-content: space-around;
         text-align: center;
-        &__img-1 {
-            width: 45%;
-            img {
-                width: 100%;
-            }
+    }
+    &__img-1 {
+        width: 45%;
+        img {
+            width: 100%;
         }
-        &__img-2 {
-            width: 48%;
-            img {
-                width: 100%;
-            }
+    }
+    &__img-2 {
+        width: 48%;
+        img {
+            width: 100%;
         }
     }
     &__container-2 {
@@ -151,12 +142,10 @@
 
 .post-6 {
     @include grid(1fr 1fr);
-    &__container-2 {
-        &__img-1 {
+    &__img-1 {
+        width: 100%;
+        img {
             width: 100%;
-            img {
-                width: 100%;
-            }
         }
     }
 }
