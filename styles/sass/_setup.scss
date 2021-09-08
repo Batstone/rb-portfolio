@@ -69,12 +69,11 @@ nav {
     font-family: 'Julius Sans One', sans-serif;
     font-weight: bold;
     a {
-        letter-spacing: 2px;
+        letter-spacing: 1px;
         font-size: 20px;
         color: rgb(74, 128, 74);
         border-bottom: 1px solid transparent;
         transition: .5s;
-        padding: 5px;
         &:hover,
         &:focus {
             color: #afafaf;

@@ -285,13 +285,12 @@ nav {
 }
 
 nav a {
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   font-size: 20px;
   color: #4a804a;
   border-bottom: 1px solid transparent;
   -webkit-transition: .5s;
   transition: .5s;
-  padding: 5px;
 }
 
 nav a:hover, nav a:focus {
@@ -428,15 +427,15 @@ i:hover, i:focus {
 }
 
 .header__social-icon {
-  color: black;
+  color: white;
   font-size: 25px;
-  background-color: #4a804a;
+  background-color: black;
   border-radius: 50%;
   padding: 15px 15px;
 }
 
 .header__social-icon:hover, .header__social-icon:focus {
-  color: white;
+  color: #4a804a;
   background-color: black;
 }
 
@@ -1006,6 +1005,15 @@ i:hover, i:focus {
 
 .talks-3__text-2 {
   width: 50%;
+}
+
+.lab__text h1 {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.lab__text h2 {
+  margin: 40px 0 20px 0;
 }
 
 /* Portrait tablet and small desktops */

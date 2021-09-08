@@ -44,9 +44,6 @@
         background-color: black;
         margin-left: 20px;
     }
-    // &__link {
-    //     margin-left: 20px;
-    // }
     &__social-list {
         position: fixed;
         top: 30%;
@@ -56,15 +53,15 @@
         margin-bottom: 25px;
     }
     &__social-icon {
-        color: black;
+        color: white;
         font-size: 25px;
-        background-color: rgb(74, 128, 74);
+        background-color: black;
         border-radius: 50%;;
         padding: 15px 15px;
     }
     &__social-icon:hover,
     &__social-icon:focus {
-        color: white;
+        color: rgb(74, 128, 74);
         background-color: black;
     }
 }
